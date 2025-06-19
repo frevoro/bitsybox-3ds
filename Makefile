@@ -107,6 +107,8 @@ BUILD_RELEASE_GAMES_DIR=${BUILD_RELEASE_DIR}/${BUILD_RELEASE_GAMES_SUBDIR}
 # == RELEASE TARGET ==
 release: clean-release embed-js build-release-${PLATFORM} package-release-${PLATFORM}
 
+3ds: clean-release embed-js build-release-3DS package-release-3DS
+
 embed-js:
 	${JS} util/embed.js ./src/bitsy/engine ./src/bitsybox
 	${JS} util/embed.js ./src/bitsy/font ./src/bitsybox
@@ -126,6 +128,9 @@ build-release-LIN: build-release
 
 build-release-RPI: build-release
 	$(CC) $(SRC_FILES) ${RELEASE_FLAGS_DYNAMIC} -D${PLATFORM_DEFINE} -o ${BIN_DIR}/$(APP_BINARY_DYNAMIC)
+
+# STILL TESTING!
+build-release-3DS: build-release
 
 package-release:
 	${MAKE_DIRECTORY} ${BUILD_RELEASE_BINARY_DIR}
