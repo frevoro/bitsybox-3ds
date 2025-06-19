@@ -11,8 +11,6 @@ features:
 
 # build instructions
 
-these are instructions for building bitsybox from source - you can also download [pre-built versions from itch.io](https://ledoux.itch.io/bitsybox)
-
 ## requirements
 
 to build bitsybox, you'll need the following:
