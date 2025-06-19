@@ -1,4 +1,4 @@
-# bitsybox
+# bitsybox 3ds
 
 ~ a [bitsy](https://bitsy.org) emulator ~
 
@@ -7,7 +7,7 @@ features:
 - play `.bitsy` game files
 - keyboard and gamepad controls supported
 - windowed and fullscreen modes
-- platforms: windows, macOS, raspberry pi 4, linux
+- platforms: windows, macOS, raspberry pi 4, linux, 3ds
 
 # build instructions
 
@@ -57,3 +57,10 @@ if using MSYS2:
 - using MSYS2, install make, gcc, SDL2, and Node.js
 - from the MSYS2 terminal, navigate to the root directory of the bitsybox source code
 - run `make`
+
+## 3ds (NOT DONE!)
+
+for 3ds you will need [devkitPro](https://github.com/devkitPro/installer/releases). install it with 3ds-dev checked.
+
+- open devkitPro's MSYS2 terminal.
+- run `make 3ds`.
