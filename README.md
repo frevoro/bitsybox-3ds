@@ -60,5 +60,6 @@ if using MSYS2:
 
 for 3ds you will need [devkitPro](https://github.com/devkitPro/installer/releases). install it with 3ds-dev checked.
 
-- open devkitPro's MSYS2 terminal.
-- run `make 3ds`.
+- open devkitPro's MSYS2 terminal
+- from devkitPro's terminal, navigate to the root directory of the bitsybox source code
+- run `make 3ds`
